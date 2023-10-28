@@ -1,0 +1,14 @@
+/* styles.css */
+
+.dark-theme {
+    background-color: hsla(224, 10%, 10%, 1); /* Dark background color */
+    color: hsla(224, 6%, 77%,1);           /* Light text color */
+    padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Add more styles for your dark theme here */
+}
+
+.search {
+    background-color: hsla(224, 10%, 10%, 1); /* Dark background color */
+    color: hsla(224, 6%, 77%,1);
+}
