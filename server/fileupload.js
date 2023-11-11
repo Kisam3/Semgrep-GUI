@@ -36,7 +36,7 @@ app.post('/upload', uploads.single('file'), (req, res) => {
             // console.log(desiredArray);
             const checkIds = desiredArray.map((result) => result.check_id);
             // Replace with your MongoDB connection URL
-            const uri = 'mongodb://localhost:27017/semgrepresults';
+            const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/semgrepresults';
             async function connectToMongoDB() {
                 const client = new MongoClient(uri, { useNewUrlParser: true });
 

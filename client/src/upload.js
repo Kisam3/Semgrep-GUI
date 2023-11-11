@@ -28,9 +28,12 @@ function FileUpload() {
     };
 
     return (
+
         <div>
+
             <input type="file" accept=".json" onChange={handleFileChange} />
-            <button onClick={handleUpload}>Upload</button>
+            <button className={' px-3 py-1 mb-1'} onClick={handleUpload}>Upload</button>
+            <img src={require("./img/background.jpg")} alt={'Backgroung'} />
         </div>
     );
 }
